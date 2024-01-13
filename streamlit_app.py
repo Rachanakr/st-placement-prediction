@@ -25,7 +25,7 @@ def fun():
 	st.header("Placement Prediction Project")
 	st.info("Enter all the details properly")
 	cgpa = st.number_input("Enter your CPGA: ")
-	placement_exam_marks= input("Enter the marks scored:")
+	placement_exam_marks= st.number_input("Enter the marks scored:")
 	li = [cgpa,placement_exam_marks]
 	x=st.button("SUBMIT")
 	if x: 
