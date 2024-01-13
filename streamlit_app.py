@@ -24,8 +24,8 @@ y_pred=model.predict(x_test)
 def fun():
 	st.header("Placement Prediction Project")
 	st.info("Enter all the details properly")
-	cgpa = st.number_input("Enter your CPGA: ")
-	placement_exam_marks= st.number_input("Enter the marks scored:")
+	cgpa = st.number_input("Enter your CGPA: ")
+	placement_exam_marks= st.number_input("Enter the marks scored in placement exam:")
 	li = [cgpa,placement_exam_marks]
 	x=st.button("SUBMIT")
 	if x: 
