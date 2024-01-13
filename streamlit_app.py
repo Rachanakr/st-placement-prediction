@@ -12,16 +12,6 @@ df= pd.read_csv("placement.csv")
 #Step 2
 #Data preproccessing
 
-le=LabelEncoder()
-stream=le.fit_transform(df['Stream'])
-df["Stream"]=stream
-x=df.pop("Stream")
-df.insert(2,"Stream",x)
-
-
-x=le.fit_transform(df["Gender"])
-df.drop("Gender",axis=1,inplace=True)
-df.insert(1,"Gender",x)
 
 #Step 3
 #Building our model
