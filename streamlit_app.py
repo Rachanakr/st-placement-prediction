@@ -15,7 +15,7 @@ df= pd.read_csv("placement.csv")
 #Step 3
 #Building our model
 
-x_train,x_test,y_train,y_test=train_test_split(df[['CGPA','placement_exam_marks']],df.Placed,test_size=0.2)
+x_train,x_test,y_train,y_test=train_test_split(df[['cgpa','placement_exam_marks']],df.placed,test_size=0.2)
 model=LogisticRegression()
 model.fit(x_train,y_train)
 
