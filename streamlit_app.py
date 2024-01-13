@@ -22,7 +22,7 @@ model.fit(x_train,y_train)
 y_pred=model.predict(x_test)
 
 def fun():
-	st.header("Placement Prediction Project")
+	st.header("Student Placement Prediction")
 	st.info("Enter all the details properly")
 	cgpa = st.number_input("Enter your CGPA: ")
 	placement_exam_marks= st.number_input("Enter the marks scored in placement exam:")
