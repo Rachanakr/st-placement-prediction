@@ -20,6 +20,7 @@ model=LogisticRegression()
 model.fit(x_train,y_train)
 
 y_pred=model.predict(x_test)
+a=model.score(x_test,y_test)*100
 
 def fun():
 	st.header("Student Placement Prediction")
@@ -32,6 +33,7 @@ def fun():
 		output = model.predict([li])
 		if output == 1:
 			st.success("Yes, You got selected!")
+			st.write('Prediction Percentage:',a)
 		else:
 			st.error("No, you did not get selected!")
 fun()
