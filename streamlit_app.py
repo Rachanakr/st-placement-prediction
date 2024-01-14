@@ -10,7 +10,7 @@ df= pd.read_csv("placement.csv")
 
 #Step 2
 #Data preproccessing
-
+#Data already preprocessed
 
 #Step 3
 #Building our model
@@ -27,8 +27,8 @@ def fun():
 	cgpa = st.number_input("Enter your CGPA: ")
 	placement_exam_marks= st.number_input("Enter the marks scored in placement exam:")
 	li = [cgpa,placement_exam_marks]
-	x=st.button("SUBMIT")
-	if x: 
+	submit=st.button("SUBMIT")
+	if submit: 
 		output = model.predict([li])
 		if output == 1:
 			st.success("Yes, You got selected!")
